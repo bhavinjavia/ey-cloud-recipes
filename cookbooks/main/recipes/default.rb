@@ -7,6 +7,9 @@
 # uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # require_recipe "sphinx"
 
+#uncomment to turn on engineyard_env
+require_recipe "engineyard_env"
+
 #uncomment to turn on memcached
 # require_recipe "memcached"
 

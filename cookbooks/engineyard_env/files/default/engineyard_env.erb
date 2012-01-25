@@ -1,0 +1,5 @@
+unless defined?(EY_ENVIRONMENT_NAME)
+  EY_ENVIRONMENT_NAME = <%= @environment['name'] %>
+end
+
+raise "Failed to set EY_ENVIRONMENT_NAME ! Please set it manually in '#{Rails.env}.rb' or check 'engineyard_env' custom chef recipe." if EY_ENVIRONMENT_NAME.blank?
